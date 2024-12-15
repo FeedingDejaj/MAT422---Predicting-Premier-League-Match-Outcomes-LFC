@@ -1,0 +1,276 @@
+2024-12-14 18:39:30 INFO [main]: Starting the pipeline for multiple seasons...
+2024-12-14 18:39:30 INFO [main]: 
+Processing season: 2018-2019
+2024-12-14 18:39:30 INFO [main]: Saving cached data to /Users/abdulaalkhafaji/soccerdata/data/FBref
+2024-12-14 18:39:30 INFO [main]: Fetching schedule data...
+2024-12-14 18:39:30 INFO [main]: Columns in schedule: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes']
+2024-12-14 18:39:30 INFO [main]: Fetching shooting data...
+2024-12-14 18:39:31 INFO [main]: Columns in shooting: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Standard_Gls', 'Standard_Sh', 'Standard_SoT', 'Standard_SoT%', 'Standard_G/Sh', 'Standard_G/SoT', 'Standard_Dist', 'Standard_FK', 'Standard_PK', 'Standard_PKatt', 'Expected_xG', 'Expected_npxG', 'Expected_npxG/Sh', 'Expected_G-xG', 'Expected_np:G-xG', 'time', 'match_report']
+2024-12-14 18:39:31 INFO [main]: Fetching passing data...
+2024-12-14 18:39:31 INFO [main]: Columns in passing: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Total_Cmp', 'Total_Att', 'Total_Cmp%', 'Total_TotDist', 'Total_PrgDist', 'Short_Cmp', 'Short_Att', 'Short_Cmp%', 'Medium_Cmp', 'Medium_Att', 'Medium_Cmp%', 'Long_Cmp', 'Long_Att', 'Long_Cmp%', 'Ast', 'xAG', 'xA', 'KP', '1/3', 'PPA', 'CrsPA', 'PrgP', 'time', 'match_report']
+2024-12-14 18:39:31 INFO [main]: Fetching defense data...
+2024-12-14 18:39:31 INFO [main]: Columns in defense: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Tackles_Tkl', 'Tackles_TklW', 'Tackles_Def 3rd', 'Tackles_Mid 3rd', 'Tackles_Att 3rd', 'Challenges_Tkl', 'Challenges_Att', 'Challenges_Tkl%', 'Challenges_Lost', 'Blocks_Blocks', 'Blocks_Sh', 'Blocks_Pass', 'Int', 'Tkl+Int', 'Clr', 'Err', 'time', 'match_report']
+2024-12-14 18:39:31 INFO [main]: Fetching keeper data...
+2024-12-14 18:39:31 INFO [main]: Columns in keeper: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Performance_SoTA', 'Performance_GA', 'Performance_Saves', 'Performance_Save%', 'Performance_CS', 'Performance_PSxG', 'Performance_PSxG+/-', 'Penalty Kicks_PKatt', 'Penalty Kicks_PKA', 'Penalty Kicks_PKsv', 'Penalty Kicks_PKm', 'Launched_Cmp', 'Launched_Att', 'Launched_Cmp%', 'Passes_Att (GK)', 'Passes_Thr', 'Passes_Launch%', 'Passes_AvgLen', 'Goal Kicks_Att', 'Goal Kicks_Launch%', 'Goal Kicks_AvgLen', 'Crosses_Opp', 'Crosses_Stp', 'Crosses_Stp%', 'Sweeper_#OPA', 'Sweeper_AvgDist', 'time', 'match_report']
+2024-12-14 18:39:31 INFO [main]: Fetching misc data...
+2024-12-14 18:39:31 INFO [main]: Columns in misc: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Performance_CrdY', 'Performance_CrdR', 'Performance_2CrdY', 'Performance_Fls', 'Performance_Fld', 'Performance_Off', 'Performance_Crs', 'Performance_Int', 'Performance_TklW', 'Performance_PKwon', 'Performance_PKcon', 'Performance_OG', 'Performance_Recov', 'Aerial Duels_Won', 'Aerial Duels_Lost', 'Aerial Duels_Won%', 'time', 'match_report']
+2024-12-14 18:39:31 INFO [main]: Schedule columns: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes']
+2024-12-14 18:39:31 INFO [main]: Final columns after merging: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes', 'round_shooting', 'day_shooting', 'result_shooting', 'GF_shooting', 'GA_shooting', 'Standard_Gls', 'Standard_Sh', 'Standard_SoT', 'Standard_SoT%', 'Standard_G/Sh', 'Standard_G/SoT', 'Standard_Dist', 'Standard_FK', 'Standard_PK', 'Standard_PKatt', 'Expected_xG', 'Expected_npxG', 'Expected_npxG/Sh', 'Expected_G-xG', 'Expected_np:G-xG', 'time_shooting', 'match_report_shooting', 'round_passing', 'day_passing', 'result_passing', 'GF_passing', 'GA_passing', 'Total_Cmp', 'Total_Att', 'Total_Cmp%', 'Total_TotDist', 'Total_PrgDist', 'Short_Cmp', 'Short_Att', 'Short_Cmp%', 'Medium_Cmp', 'Medium_Att', 'Medium_Cmp%', 'Long_Cmp', 'Long_Att', 'Long_Cmp%', 'Ast', 'xAG', 'xA', 'KP', '1/3', 'PPA', 'CrsPA', 'PrgP', 'time_passing', 'match_report_passing', 'round_defense', 'day_defense', 'result_defense', 'GF_defense', 'GA_defense', 'Tackles_Tkl', 'Tackles_TklW', 'Tackles_Def 3rd', 'Tackles_Mid 3rd', 'Tackles_Att 3rd', 'Challenges_Tkl', 'Challenges_Att', 'Challenges_Tkl%', 'Challenges_Lost', 'Blocks_Blocks', 'Blocks_Sh', 'Blocks_Pass', 'Int', 'Tkl+Int', 'Clr', 'Err', 'time_defense', 'match_report_defense', 'round_keeper', 'day_keeper', 'result_keeper', 'GF_keeper', 'GA_keeper', 'Performance_SoTA', 'Performance_GA', 'Performance_Saves', 'Performance_Save%', 'Performance_CS', 'Performance_PSxG', 'Performance_PSxG+/-', 'Penalty Kicks_PKatt', 'Penalty Kicks_PKA', 'Penalty Kicks_PKsv', 'Penalty Kicks_PKm', 'Launched_Cmp', 'Launched_Att', 'Launched_Cmp%', 'Passes_Att (GK)', 'Passes_Thr', 'Passes_Launch%', 'Passes_AvgLen', 'Goal Kicks_Att', 'Goal Kicks_Launch%', 'Goal Kicks_AvgLen', 'Crosses_Opp', 'Crosses_Stp', 'Crosses_Stp%', 'Sweeper_#OPA', 'Sweeper_AvgDist', 'time_keeper', 'match_report_keeper', 'round_misc', 'day_misc', 'result_misc', 'GF_misc', 'GA_misc', 'Performance_CrdY', 'Performance_CrdR', 'Performance_2CrdY', 'Performance_Fls', 'Performance_Fld', 'Performance_Off', 'Performance_Crs', 'Performance_Int', 'Performance_TklW', 'Performance_PKwon', 'Performance_PKcon', 'Performance_OG', 'Performance_Recov', 'Aerial Duels_Won', 'Aerial Duels_Lost', 'Aerial Duels_Won%', 'time_misc', 'match_report_misc']
+2024-12-14 18:39:31 INFO [main]: Data scraped successfully and saved to ../modsData/lfc_data_2018.csv
+2024-12-14 18:39:31 INFO [main]: Summary of scraped data:
+Total matches: 38
+Date range: 2018-08-12 00:00:00 to 2019-05-12 00:00:00
+Columns retrieved: Date, Venue, Opponent, Goals For, Goals Against, Expected Goals (xG), Expected Goals Against (xGA), Possession, Key Passes, Passes into Penalty Area, Crosses into Penalty Area, Interceptions, Clearances, Errors, Home Venue, Clean Sheets
+2024-12-14 18:39:31 INFO [main]: Loading data from ../modsData/lfc_data_2018.csv
+2024-12-14 18:39:31 INFO [main]: Processed data saved to ../modsData/lfc_data_2018_processed.csv
+2024-12-14 18:39:31 INFO [main]: Processed Data Summary:
+Total matches: 38
+Date range: 2018-08-12 00:00:00 to 2019-05-12 00:00:00
+Columns: Date, Venue, Opponent, Goals For, Goals Against, Expected Goals (xG), Expected Goals Against (xGA), Possession, Key Passes, Passes into Penalty Area, Crosses into Penalty Area, Interceptions, Clearances, Errors, Home Venue, Clean Sheets, Goal Difference, Result, Result_Code, Opponent_Code, Goals For_Rolling_5, Goals Against_Rolling_5, Goal Difference_Rolling_5, Possession_Rolling_5, Expected Goals (xG)_Rolling_5, Expected Goals Against (xGA)_Rolling_5, Interceptions_Rolling_5, Clearances_Rolling_5, Errors_Rolling_5, Days Since Last Match
+2024-12-14 18:39:31 INFO [main]: Loading processed data from ../modsData/lfc_data_2018_processed.csv
+2024-12-14 18:39:31 INFO [main]: Logistic Regression Model Accuracy after balancing: 1.00
+2024-12-14 18:39:31 ERROR [main]: Failed during prediction for 2018-2019: Number of classes, 1, does not match size of target_names, 3. Try specifying the labels parameter
+2024-12-14 18:39:31 INFO [main]: 
+Processing season: 2019-2020
+2024-12-14 18:39:31 INFO [main]: Saving cached data to /Users/abdulaalkhafaji/soccerdata/data/FBref
+2024-12-14 18:39:31 INFO [main]: Fetching schedule data...
+2024-12-14 18:39:31 INFO [main]: Columns in schedule: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes']
+2024-12-14 18:39:31 INFO [main]: Fetching shooting data...
+2024-12-14 18:39:31 INFO [main]: Columns in shooting: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Standard_Gls', 'Standard_Sh', 'Standard_SoT', 'Standard_SoT%', 'Standard_G/Sh', 'Standard_G/SoT', 'Standard_Dist', 'Standard_FK', 'Standard_PK', 'Standard_PKatt', 'Expected_xG', 'Expected_npxG', 'Expected_npxG/Sh', 'Expected_G-xG', 'Expected_np:G-xG', 'time', 'match_report']
+2024-12-14 18:39:31 INFO [main]: Fetching passing data...
+2024-12-14 18:39:31 INFO [main]: Columns in passing: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Total_Cmp', 'Total_Att', 'Total_Cmp%', 'Total_TotDist', 'Total_PrgDist', 'Short_Cmp', 'Short_Att', 'Short_Cmp%', 'Medium_Cmp', 'Medium_Att', 'Medium_Cmp%', 'Long_Cmp', 'Long_Att', 'Long_Cmp%', 'Ast', 'xAG', 'xA', 'KP', '1/3', 'PPA', 'CrsPA', 'PrgP', 'time', 'match_report']
+2024-12-14 18:39:31 INFO [main]: Fetching defense data...
+2024-12-14 18:39:32 INFO [main]: Columns in defense: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Tackles_Tkl', 'Tackles_TklW', 'Tackles_Def 3rd', 'Tackles_Mid 3rd', 'Tackles_Att 3rd', 'Challenges_Tkl', 'Challenges_Att', 'Challenges_Tkl%', 'Challenges_Lost', 'Blocks_Blocks', 'Blocks_Sh', 'Blocks_Pass', 'Int', 'Tkl+Int', 'Clr', 'Err', 'time', 'match_report']
+2024-12-14 18:39:32 INFO [main]: Fetching keeper data...
+2024-12-14 18:39:32 INFO [main]: Columns in keeper: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Performance_SoTA', 'Performance_GA', 'Performance_Saves', 'Performance_Save%', 'Performance_CS', 'Performance_PSxG', 'Performance_PSxG+/-', 'Penalty Kicks_PKatt', 'Penalty Kicks_PKA', 'Penalty Kicks_PKsv', 'Penalty Kicks_PKm', 'Launched_Cmp', 'Launched_Att', 'Launched_Cmp%', 'Passes_Att (GK)', 'Passes_Thr', 'Passes_Launch%', 'Passes_AvgLen', 'Goal Kicks_Att', 'Goal Kicks_Launch%', 'Goal Kicks_AvgLen', 'Crosses_Opp', 'Crosses_Stp', 'Crosses_Stp%', 'Sweeper_#OPA', 'Sweeper_AvgDist', 'time', 'match_report']
+2024-12-14 18:39:32 INFO [main]: Fetching misc data...
+2024-12-14 18:39:32 INFO [main]: Columns in misc: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Performance_CrdY', 'Performance_CrdR', 'Performance_2CrdY', 'Performance_Fls', 'Performance_Fld', 'Performance_Off', 'Performance_Crs', 'Performance_Int', 'Performance_TklW', 'Performance_PKwon', 'Performance_PKcon', 'Performance_OG', 'Performance_Recov', 'Aerial Duels_Won', 'Aerial Duels_Lost', 'Aerial Duels_Won%', 'time', 'match_report']
+2024-12-14 18:39:32 INFO [main]: Schedule columns: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes']
+2024-12-14 18:39:32 INFO [main]: Final columns after merging: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes', 'round_shooting', 'day_shooting', 'result_shooting', 'GF_shooting', 'GA_shooting', 'Standard_Gls', 'Standard_Sh', 'Standard_SoT', 'Standard_SoT%', 'Standard_G/Sh', 'Standard_G/SoT', 'Standard_Dist', 'Standard_FK', 'Standard_PK', 'Standard_PKatt', 'Expected_xG', 'Expected_npxG', 'Expected_npxG/Sh', 'Expected_G-xG', 'Expected_np:G-xG', 'time_shooting', 'match_report_shooting', 'round_passing', 'day_passing', 'result_passing', 'GF_passing', 'GA_passing', 'Total_Cmp', 'Total_Att', 'Total_Cmp%', 'Total_TotDist', 'Total_PrgDist', 'Short_Cmp', 'Short_Att', 'Short_Cmp%', 'Medium_Cmp', 'Medium_Att', 'Medium_Cmp%', 'Long_Cmp', 'Long_Att', 'Long_Cmp%', 'Ast', 'xAG', 'xA', 'KP', '1/3', 'PPA', 'CrsPA', 'PrgP', 'time_passing', 'match_report_passing', 'round_defense', 'day_defense', 'result_defense', 'GF_defense', 'GA_defense', 'Tackles_Tkl', 'Tackles_TklW', 'Tackles_Def 3rd', 'Tackles_Mid 3rd', 'Tackles_Att 3rd', 'Challenges_Tkl', 'Challenges_Att', 'Challenges_Tkl%', 'Challenges_Lost', 'Blocks_Blocks', 'Blocks_Sh', 'Blocks_Pass', 'Int', 'Tkl+Int', 'Clr', 'Err', 'time_defense', 'match_report_defense', 'round_keeper', 'day_keeper', 'result_keeper', 'GF_keeper', 'GA_keeper', 'Performance_SoTA', 'Performance_GA', 'Performance_Saves', 'Performance_Save%', 'Performance_CS', 'Performance_PSxG', 'Performance_PSxG+/-', 'Penalty Kicks_PKatt', 'Penalty Kicks_PKA', 'Penalty Kicks_PKsv', 'Penalty Kicks_PKm', 'Launched_Cmp', 'Launched_Att', 'Launched_Cmp%', 'Passes_Att (GK)', 'Passes_Thr', 'Passes_Launch%', 'Passes_AvgLen', 'Goal Kicks_Att', 'Goal Kicks_Launch%', 'Goal Kicks_AvgLen', 'Crosses_Opp', 'Crosses_Stp', 'Crosses_Stp%', 'Sweeper_#OPA', 'Sweeper_AvgDist', 'time_keeper', 'match_report_keeper', 'round_misc', 'day_misc', 'result_misc', 'GF_misc', 'GA_misc', 'Performance_CrdY', 'Performance_CrdR', 'Performance_2CrdY', 'Performance_Fls', 'Performance_Fld', 'Performance_Off', 'Performance_Crs', 'Performance_Int', 'Performance_TklW', 'Performance_PKwon', 'Performance_PKcon', 'Performance_OG', 'Performance_Recov', 'Aerial Duels_Won', 'Aerial Duels_Lost', 'Aerial Duels_Won%', 'time_misc', 'match_report_misc']
+2024-12-14 18:39:32 INFO [main]: Data scraped successfully and saved to ../modsData/lfc_data_2019.csv
+2024-12-14 18:39:32 INFO [main]: Summary of scraped data:
+Total matches: 38
+Date range: 2019-08-09 00:00:00 to 2020-07-26 00:00:00
+Columns retrieved: Date, Venue, Opponent, Goals For, Goals Against, Expected Goals (xG), Expected Goals Against (xGA), Possession, Key Passes, Passes into Penalty Area, Crosses into Penalty Area, Interceptions, Clearances, Errors, Home Venue, Clean Sheets
+2024-12-14 18:39:32 INFO [main]: Loading data from ../modsData/lfc_data_2019.csv
+2024-12-14 18:39:32 INFO [main]: Processed data saved to ../modsData/lfc_data_2019_processed.csv
+2024-12-14 18:39:32 INFO [main]: Processed Data Summary:
+Total matches: 38
+Date range: 2019-08-09 00:00:00 to 2020-07-26 00:00:00
+Columns: Date, Venue, Opponent, Goals For, Goals Against, Expected Goals (xG), Expected Goals Against (xGA), Possession, Key Passes, Passes into Penalty Area, Crosses into Penalty Area, Interceptions, Clearances, Errors, Home Venue, Clean Sheets, Goal Difference, Result, Result_Code, Opponent_Code, Goals For_Rolling_5, Goals Against_Rolling_5, Goal Difference_Rolling_5, Possession_Rolling_5, Expected Goals (xG)_Rolling_5, Expected Goals Against (xGA)_Rolling_5, Interceptions_Rolling_5, Clearances_Rolling_5, Errors_Rolling_5, Days Since Last Match
+2024-12-14 18:39:32 INFO [main]: Loading processed data from ../modsData/lfc_data_2019_processed.csv
+2024-12-14 18:39:32 INFO [main]: Logistic Regression Model Accuracy after balancing: 0.60
+2024-12-14 18:39:32 INFO [main]: Logistic Regression Classification Report after balancing:
+              precision    recall  f1-score   support
+
+        Loss       0.50      1.00      0.67         1
+        Draw       0.00      0.00      0.00         1
+         Win       0.67      0.67      0.67         3
+
+    accuracy                           0.60         5
+   macro avg       0.39      0.56      0.44         5
+weighted avg       0.50      0.60      0.53         5
+
+2024-12-14 18:39:32 INFO [main]: Random Forest Model Accuracy after balancing: 0.60
+2024-12-14 18:39:32 INFO [main]: Random Forest Classification Report after balancing:
+              precision    recall  f1-score   support
+
+        Loss       0.00      0.00      0.00         1
+        Draw       0.00      0.00      0.00         1
+         Win       0.60      1.00      0.75         3
+
+    accuracy                           0.60         5
+   macro avg       0.20      0.33      0.25         5
+weighted avg       0.36      0.60      0.45         5
+
+2024-12-14 18:39:32 INFO [main]: Predictions vs Actual Results:
+      Date      Opponent Actual Result LogReg Prediction RandomForest Prediction
+2020-07-08      Brighton           Win               Win                     Win
+2020-07-11       Burnley          Draw               Win                     Win
+2020-07-15       Arsenal          Loss              Loss                     Win
+2020-07-22       Chelsea           Win               Win                     Win
+2020-07-26 Newcastle Utd           Win              Loss                     Win
+2024-12-14 18:39:32 INFO [main]: 
+Processing season: 2020-2021
+2024-12-14 18:39:32 INFO [main]: Saving cached data to /Users/abdulaalkhafaji/soccerdata/data/FBref
+2024-12-14 18:39:32 INFO [main]: Fetching schedule data...
+2024-12-14 18:39:32 INFO [main]: Columns in schedule: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes']
+2024-12-14 18:39:32 INFO [main]: Fetching shooting data...
+2024-12-14 18:39:32 INFO [main]: Columns in shooting: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Standard_Gls', 'Standard_Sh', 'Standard_SoT', 'Standard_SoT%', 'Standard_G/Sh', 'Standard_G/SoT', 'Standard_Dist', 'Standard_FK', 'Standard_PK', 'Standard_PKatt', 'Expected_xG', 'Expected_npxG', 'Expected_npxG/Sh', 'Expected_G-xG', 'Expected_np:G-xG', 'time', 'match_report']
+2024-12-14 18:39:32 INFO [main]: Fetching passing data...
+2024-12-14 18:39:32 INFO [main]: Columns in passing: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Total_Cmp', 'Total_Att', 'Total_Cmp%', 'Total_TotDist', 'Total_PrgDist', 'Short_Cmp', 'Short_Att', 'Short_Cmp%', 'Medium_Cmp', 'Medium_Att', 'Medium_Cmp%', 'Long_Cmp', 'Long_Att', 'Long_Cmp%', 'Ast', 'xAG', 'xA', 'KP', '1/3', 'PPA', 'CrsPA', 'PrgP', 'time', 'match_report']
+2024-12-14 18:39:32 INFO [main]: Fetching defense data...
+2024-12-14 18:39:33 INFO [main]: Columns in defense: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Tackles_Tkl', 'Tackles_TklW', 'Tackles_Def 3rd', 'Tackles_Mid 3rd', 'Tackles_Att 3rd', 'Challenges_Tkl', 'Challenges_Att', 'Challenges_Tkl%', 'Challenges_Lost', 'Blocks_Blocks', 'Blocks_Sh', 'Blocks_Pass', 'Int', 'Tkl+Int', 'Clr', 'Err', 'time', 'match_report']
+2024-12-14 18:39:33 INFO [main]: Fetching keeper data...
+2024-12-14 18:39:33 INFO [main]: Columns in keeper: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Performance_SoTA', 'Performance_GA', 'Performance_Saves', 'Performance_Save%', 'Performance_CS', 'Performance_PSxG', 'Performance_PSxG+/-', 'Penalty Kicks_PKatt', 'Penalty Kicks_PKA', 'Penalty Kicks_PKsv', 'Penalty Kicks_PKm', 'Launched_Cmp', 'Launched_Att', 'Launched_Cmp%', 'Passes_Att (GK)', 'Passes_Thr', 'Passes_Launch%', 'Passes_AvgLen', 'Goal Kicks_Att', 'Goal Kicks_Launch%', 'Goal Kicks_AvgLen', 'Crosses_Opp', 'Crosses_Stp', 'Crosses_Stp%', 'Sweeper_#OPA', 'Sweeper_AvgDist', 'time', 'match_report']
+2024-12-14 18:39:33 INFO [main]: Fetching misc data...
+2024-12-14 18:39:33 INFO [main]: Columns in misc: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Performance_CrdY', 'Performance_CrdR', 'Performance_2CrdY', 'Performance_Fls', 'Performance_Fld', 'Performance_Off', 'Performance_Crs', 'Performance_Int', 'Performance_TklW', 'Performance_PKwon', 'Performance_PKcon', 'Performance_OG', 'Performance_Recov', 'Aerial Duels_Won', 'Aerial Duels_Lost', 'Aerial Duels_Won%', 'time', 'match_report']
+2024-12-14 18:39:33 INFO [main]: Schedule columns: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes']
+2024-12-14 18:39:33 INFO [main]: Final columns after merging: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes', 'round_shooting', 'day_shooting', 'result_shooting', 'GF_shooting', 'GA_shooting', 'Standard_Gls', 'Standard_Sh', 'Standard_SoT', 'Standard_SoT%', 'Standard_G/Sh', 'Standard_G/SoT', 'Standard_Dist', 'Standard_FK', 'Standard_PK', 'Standard_PKatt', 'Expected_xG', 'Expected_npxG', 'Expected_npxG/Sh', 'Expected_G-xG', 'Expected_np:G-xG', 'time_shooting', 'match_report_shooting', 'round_passing', 'day_passing', 'result_passing', 'GF_passing', 'GA_passing', 'Total_Cmp', 'Total_Att', 'Total_Cmp%', 'Total_TotDist', 'Total_PrgDist', 'Short_Cmp', 'Short_Att', 'Short_Cmp%', 'Medium_Cmp', 'Medium_Att', 'Medium_Cmp%', 'Long_Cmp', 'Long_Att', 'Long_Cmp%', 'Ast', 'xAG', 'xA', 'KP', '1/3', 'PPA', 'CrsPA', 'PrgP', 'time_passing', 'match_report_passing', 'round_defense', 'day_defense', 'result_defense', 'GF_defense', 'GA_defense', 'Tackles_Tkl', 'Tackles_TklW', 'Tackles_Def 3rd', 'Tackles_Mid 3rd', 'Tackles_Att 3rd', 'Challenges_Tkl', 'Challenges_Att', 'Challenges_Tkl%', 'Challenges_Lost', 'Blocks_Blocks', 'Blocks_Sh', 'Blocks_Pass', 'Int', 'Tkl+Int', 'Clr', 'Err', 'time_defense', 'match_report_defense', 'round_keeper', 'day_keeper', 'result_keeper', 'GF_keeper', 'GA_keeper', 'Performance_SoTA', 'Performance_GA', 'Performance_Saves', 'Performance_Save%', 'Performance_CS', 'Performance_PSxG', 'Performance_PSxG+/-', 'Penalty Kicks_PKatt', 'Penalty Kicks_PKA', 'Penalty Kicks_PKsv', 'Penalty Kicks_PKm', 'Launched_Cmp', 'Launched_Att', 'Launched_Cmp%', 'Passes_Att (GK)', 'Passes_Thr', 'Passes_Launch%', 'Passes_AvgLen', 'Goal Kicks_Att', 'Goal Kicks_Launch%', 'Goal Kicks_AvgLen', 'Crosses_Opp', 'Crosses_Stp', 'Crosses_Stp%', 'Sweeper_#OPA', 'Sweeper_AvgDist', 'time_keeper', 'match_report_keeper', 'round_misc', 'day_misc', 'result_misc', 'GF_misc', 'GA_misc', 'Performance_CrdY', 'Performance_CrdR', 'Performance_2CrdY', 'Performance_Fls', 'Performance_Fld', 'Performance_Off', 'Performance_Crs', 'Performance_Int', 'Performance_TklW', 'Performance_PKwon', 'Performance_PKcon', 'Performance_OG', 'Performance_Recov', 'Aerial Duels_Won', 'Aerial Duels_Lost', 'Aerial Duels_Won%', 'time_misc', 'match_report_misc']
+2024-12-14 18:39:33 INFO [main]: Data scraped successfully and saved to ../modsData/lfc_data_2020.csv
+2024-12-14 18:39:33 INFO [main]: Summary of scraped data:
+Total matches: 38
+Date range: 2020-09-12 00:00:00 to 2021-05-23 00:00:00
+Columns retrieved: Date, Venue, Opponent, Goals For, Goals Against, Expected Goals (xG), Expected Goals Against (xGA), Possession, Key Passes, Passes into Penalty Area, Crosses into Penalty Area, Interceptions, Clearances, Errors, Home Venue, Clean Sheets
+2024-12-14 18:39:33 INFO [main]: Loading data from ../modsData/lfc_data_2020.csv
+2024-12-14 18:39:33 INFO [main]: Processed data saved to ../modsData/lfc_data_2020_processed.csv
+2024-12-14 18:39:33 INFO [main]: Processed Data Summary:
+Total matches: 38
+Date range: 2020-09-12 00:00:00 to 2021-05-23 00:00:00
+Columns: Date, Venue, Opponent, Goals For, Goals Against, Expected Goals (xG), Expected Goals Against (xGA), Possession, Key Passes, Passes into Penalty Area, Crosses into Penalty Area, Interceptions, Clearances, Errors, Home Venue, Clean Sheets, Goal Difference, Result, Result_Code, Opponent_Code, Goals For_Rolling_5, Goals Against_Rolling_5, Goal Difference_Rolling_5, Possession_Rolling_5, Expected Goals (xG)_Rolling_5, Expected Goals Against (xGA)_Rolling_5, Interceptions_Rolling_5, Clearances_Rolling_5, Errors_Rolling_5, Days Since Last Match
+2024-12-14 18:39:33 INFO [main]: Loading processed data from ../modsData/lfc_data_2020_processed.csv
+2024-12-14 18:39:33 INFO [main]: Logistic Regression Model Accuracy after balancing: 0.40
+2024-12-14 18:39:33 ERROR [main]: Failed during prediction for 2020-2021: Number of classes, 2, does not match size of target_names, 3. Try specifying the labels parameter
+2024-12-14 18:39:33 INFO [main]: 
+Processing season: 2021-2022
+2024-12-14 18:39:33 INFO [main]: Saving cached data to /Users/abdulaalkhafaji/soccerdata/data/FBref
+2024-12-14 18:39:33 INFO [main]: Fetching schedule data...
+2024-12-14 18:39:33 INFO [main]: Columns in schedule: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes']
+2024-12-14 18:39:33 INFO [main]: Fetching shooting data...
+2024-12-14 18:39:33 INFO [main]: Columns in shooting: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Standard_Gls', 'Standard_Sh', 'Standard_SoT', 'Standard_SoT%', 'Standard_G/Sh', 'Standard_G/SoT', 'Standard_Dist', 'Standard_FK', 'Standard_PK', 'Standard_PKatt', 'Expected_xG', 'Expected_npxG', 'Expected_npxG/Sh', 'Expected_G-xG', 'Expected_np:G-xG', 'time', 'match_report']
+2024-12-14 18:39:33 INFO [main]: Fetching passing data...
+2024-12-14 18:39:33 INFO [main]: Columns in passing: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Total_Cmp', 'Total_Att', 'Total_Cmp%', 'Total_TotDist', 'Total_PrgDist', 'Short_Cmp', 'Short_Att', 'Short_Cmp%', 'Medium_Cmp', 'Medium_Att', 'Medium_Cmp%', 'Long_Cmp', 'Long_Att', 'Long_Cmp%', 'Ast', 'xAG', 'xA', 'KP', '1/3', 'PPA', 'CrsPA', 'PrgP', 'time', 'match_report']
+2024-12-14 18:39:33 INFO [main]: Fetching defense data...
+2024-12-14 18:39:33 INFO [main]: Columns in defense: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Tackles_Tkl', 'Tackles_TklW', 'Tackles_Def 3rd', 'Tackles_Mid 3rd', 'Tackles_Att 3rd', 'Challenges_Tkl', 'Challenges_Att', 'Challenges_Tkl%', 'Challenges_Lost', 'Blocks_Blocks', 'Blocks_Sh', 'Blocks_Pass', 'Int', 'Tkl+Int', 'Clr', 'Err', 'time', 'match_report']
+2024-12-14 18:39:33 INFO [main]: Fetching keeper data...
+2024-12-14 18:39:33 INFO [main]: Columns in keeper: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Performance_SoTA', 'Performance_GA', 'Performance_Saves', 'Performance_Save%', 'Performance_CS', 'Performance_PSxG', 'Performance_PSxG+/-', 'Penalty Kicks_PKatt', 'Penalty Kicks_PKA', 'Penalty Kicks_PKsv', 'Penalty Kicks_PKm', 'Launched_Cmp', 'Launched_Att', 'Launched_Cmp%', 'Passes_Att (GK)', 'Passes_Thr', 'Passes_Launch%', 'Passes_AvgLen', 'Goal Kicks_Att', 'Goal Kicks_Launch%', 'Goal Kicks_AvgLen', 'Crosses_Opp', 'Crosses_Stp', 'Crosses_Stp%', 'Sweeper_#OPA', 'Sweeper_AvgDist', 'time', 'match_report']
+2024-12-14 18:39:33 INFO [main]: Fetching misc data...
+2024-12-14 18:39:34 INFO [main]: Columns in misc: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Performance_CrdY', 'Performance_CrdR', 'Performance_2CrdY', 'Performance_Fls', 'Performance_Fld', 'Performance_Off', 'Performance_Crs', 'Performance_Int', 'Performance_TklW', 'Performance_PKwon', 'Performance_PKcon', 'Performance_OG', 'Performance_Recov', 'Aerial Duels_Won', 'Aerial Duels_Lost', 'Aerial Duels_Won%', 'time', 'match_report']
+2024-12-14 18:39:34 INFO [main]: Schedule columns: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes']
+2024-12-14 18:39:34 INFO [main]: Final columns after merging: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes', 'round_shooting', 'day_shooting', 'result_shooting', 'GF_shooting', 'GA_shooting', 'Standard_Gls', 'Standard_Sh', 'Standard_SoT', 'Standard_SoT%', 'Standard_G/Sh', 'Standard_G/SoT', 'Standard_Dist', 'Standard_FK', 'Standard_PK', 'Standard_PKatt', 'Expected_xG', 'Expected_npxG', 'Expected_npxG/Sh', 'Expected_G-xG', 'Expected_np:G-xG', 'time_shooting', 'match_report_shooting', 'round_passing', 'day_passing', 'result_passing', 'GF_passing', 'GA_passing', 'Total_Cmp', 'Total_Att', 'Total_Cmp%', 'Total_TotDist', 'Total_PrgDist', 'Short_Cmp', 'Short_Att', 'Short_Cmp%', 'Medium_Cmp', 'Medium_Att', 'Medium_Cmp%', 'Long_Cmp', 'Long_Att', 'Long_Cmp%', 'Ast', 'xAG', 'xA', 'KP', '1/3', 'PPA', 'CrsPA', 'PrgP', 'time_passing', 'match_report_passing', 'round_defense', 'day_defense', 'result_defense', 'GF_defense', 'GA_defense', 'Tackles_Tkl', 'Tackles_TklW', 'Tackles_Def 3rd', 'Tackles_Mid 3rd', 'Tackles_Att 3rd', 'Challenges_Tkl', 'Challenges_Att', 'Challenges_Tkl%', 'Challenges_Lost', 'Blocks_Blocks', 'Blocks_Sh', 'Blocks_Pass', 'Int', 'Tkl+Int', 'Clr', 'Err', 'time_defense', 'match_report_defense', 'round_keeper', 'day_keeper', 'result_keeper', 'GF_keeper', 'GA_keeper', 'Performance_SoTA', 'Performance_GA', 'Performance_Saves', 'Performance_Save%', 'Performance_CS', 'Performance_PSxG', 'Performance_PSxG+/-', 'Penalty Kicks_PKatt', 'Penalty Kicks_PKA', 'Penalty Kicks_PKsv', 'Penalty Kicks_PKm', 'Launched_Cmp', 'Launched_Att', 'Launched_Cmp%', 'Passes_Att (GK)', 'Passes_Thr', 'Passes_Launch%', 'Passes_AvgLen', 'Goal Kicks_Att', 'Goal Kicks_Launch%', 'Goal Kicks_AvgLen', 'Crosses_Opp', 'Crosses_Stp', 'Crosses_Stp%', 'Sweeper_#OPA', 'Sweeper_AvgDist', 'time_keeper', 'match_report_keeper', 'round_misc', 'day_misc', 'result_misc', 'GF_misc', 'GA_misc', 'Performance_CrdY', 'Performance_CrdR', 'Performance_2CrdY', 'Performance_Fls', 'Performance_Fld', 'Performance_Off', 'Performance_Crs', 'Performance_Int', 'Performance_TklW', 'Performance_PKwon', 'Performance_PKcon', 'Performance_OG', 'Performance_Recov', 'Aerial Duels_Won', 'Aerial Duels_Lost', 'Aerial Duels_Won%', 'time_misc', 'match_report_misc']
+2024-12-14 18:39:34 INFO [main]: Data scraped successfully and saved to ../modsData/lfc_data_2021.csv
+2024-12-14 18:39:34 INFO [main]: Summary of scraped data:
+Total matches: 38
+Date range: 2020-09-12 00:00:00 to 2021-05-23 00:00:00
+Columns retrieved: Date, Venue, Opponent, Goals For, Goals Against, Expected Goals (xG), Expected Goals Against (xGA), Possession, Key Passes, Passes into Penalty Area, Crosses into Penalty Area, Interceptions, Clearances, Errors, Home Venue, Clean Sheets
+2024-12-14 18:39:34 INFO [main]: Loading data from ../modsData/lfc_data_2021.csv
+2024-12-14 18:39:34 INFO [main]: Processed data saved to ../modsData/lfc_data_2021_processed.csv
+2024-12-14 18:39:34 INFO [main]: Processed Data Summary:
+Total matches: 38
+Date range: 2020-09-12 00:00:00 to 2021-05-23 00:00:00
+Columns: Date, Venue, Opponent, Goals For, Goals Against, Expected Goals (xG), Expected Goals Against (xGA), Possession, Key Passes, Passes into Penalty Area, Crosses into Penalty Area, Interceptions, Clearances, Errors, Home Venue, Clean Sheets, Goal Difference, Result, Result_Code, Opponent_Code, Goals For_Rolling_5, Goals Against_Rolling_5, Goal Difference_Rolling_5, Possession_Rolling_5, Expected Goals (xG)_Rolling_5, Expected Goals Against (xGA)_Rolling_5, Interceptions_Rolling_5, Clearances_Rolling_5, Errors_Rolling_5, Days Since Last Match
+2024-12-14 18:39:34 INFO [main]: Loading processed data from ../modsData/lfc_data_2021_processed.csv
+2024-12-14 18:39:34 INFO [main]: Logistic Regression Model Accuracy after balancing: 0.40
+2024-12-14 18:39:34 ERROR [main]: Failed during prediction for 2021-2022: Number of classes, 2, does not match size of target_names, 3. Try specifying the labels parameter
+2024-12-14 18:39:34 INFO [main]: 
+Processing season: 2022-2023
+2024-12-14 18:39:34 INFO [main]: Saving cached data to /Users/abdulaalkhafaji/soccerdata/data/FBref
+2024-12-14 18:39:34 INFO [main]: Fetching schedule data...
+2024-12-14 18:39:34 INFO [main]: Columns in schedule: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes']
+2024-12-14 18:39:34 INFO [main]: Fetching shooting data...
+2024-12-14 18:39:34 INFO [main]: Columns in shooting: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Standard_Gls', 'Standard_Sh', 'Standard_SoT', 'Standard_SoT%', 'Standard_G/Sh', 'Standard_G/SoT', 'Standard_Dist', 'Standard_FK', 'Standard_PK', 'Standard_PKatt', 'Expected_xG', 'Expected_npxG', 'Expected_npxG/Sh', 'Expected_G-xG', 'Expected_np:G-xG', 'time', 'match_report']
+2024-12-14 18:39:34 INFO [main]: Fetching passing data...
+2024-12-14 18:39:34 INFO [main]: Columns in passing: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Total_Cmp', 'Total_Att', 'Total_Cmp%', 'Total_TotDist', 'Total_PrgDist', 'Short_Cmp', 'Short_Att', 'Short_Cmp%', 'Medium_Cmp', 'Medium_Att', 'Medium_Cmp%', 'Long_Cmp', 'Long_Att', 'Long_Cmp%', 'Ast', 'xAG', 'xA', 'KP', '1/3', 'PPA', 'CrsPA', 'PrgP', 'time', 'match_report']
+2024-12-14 18:39:34 INFO [main]: Fetching defense data...
+2024-12-14 18:39:34 INFO [main]: Columns in defense: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Tackles_Tkl', 'Tackles_TklW', 'Tackles_Def 3rd', 'Tackles_Mid 3rd', 'Tackles_Att 3rd', 'Challenges_Tkl', 'Challenges_Att', 'Challenges_Tkl%', 'Challenges_Lost', 'Blocks_Blocks', 'Blocks_Sh', 'Blocks_Pass', 'Int', 'Tkl+Int', 'Clr', 'Err', 'time', 'match_report']
+2024-12-14 18:39:34 INFO [main]: Fetching keeper data...
+2024-12-14 18:39:34 INFO [main]: Columns in keeper: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Performance_SoTA', 'Performance_GA', 'Performance_Saves', 'Performance_Save%', 'Performance_CS', 'Performance_PSxG', 'Performance_PSxG+/-', 'Penalty Kicks_PKatt', 'Penalty Kicks_PKA', 'Penalty Kicks_PKsv', 'Penalty Kicks_PKm', 'Launched_Cmp', 'Launched_Att', 'Launched_Cmp%', 'Passes_Att (GK)', 'Passes_Thr', 'Passes_Launch%', 'Passes_AvgLen', 'Goal Kicks_Att', 'Goal Kicks_Launch%', 'Goal Kicks_AvgLen', 'Crosses_Opp', 'Crosses_Stp', 'Crosses_Stp%', 'Sweeper_#OPA', 'Sweeper_AvgDist', 'time', 'match_report']
+2024-12-14 18:39:34 INFO [main]: Fetching misc data...
+2024-12-14 18:39:34 INFO [main]: Columns in misc: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Performance_CrdY', 'Performance_CrdR', 'Performance_2CrdY', 'Performance_Fls', 'Performance_Fld', 'Performance_Off', 'Performance_Crs', 'Performance_Int', 'Performance_TklW', 'Performance_PKwon', 'Performance_PKcon', 'Performance_OG', 'Performance_Recov', 'Aerial Duels_Won', 'Aerial Duels_Lost', 'Aerial Duels_Won%', 'time', 'match_report']
+2024-12-14 18:39:34 INFO [main]: Schedule columns: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes']
+2024-12-14 18:39:34 INFO [main]: Final columns after merging: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes', 'round_shooting', 'day_shooting', 'result_shooting', 'GF_shooting', 'GA_shooting', 'Standard_Gls', 'Standard_Sh', 'Standard_SoT', 'Standard_SoT%', 'Standard_G/Sh', 'Standard_G/SoT', 'Standard_Dist', 'Standard_FK', 'Standard_PK', 'Standard_PKatt', 'Expected_xG', 'Expected_npxG', 'Expected_npxG/Sh', 'Expected_G-xG', 'Expected_np:G-xG', 'time_shooting', 'match_report_shooting', 'round_passing', 'day_passing', 'result_passing', 'GF_passing', 'GA_passing', 'Total_Cmp', 'Total_Att', 'Total_Cmp%', 'Total_TotDist', 'Total_PrgDist', 'Short_Cmp', 'Short_Att', 'Short_Cmp%', 'Medium_Cmp', 'Medium_Att', 'Medium_Cmp%', 'Long_Cmp', 'Long_Att', 'Long_Cmp%', 'Ast', 'xAG', 'xA', 'KP', '1/3', 'PPA', 'CrsPA', 'PrgP', 'time_passing', 'match_report_passing', 'round_defense', 'day_defense', 'result_defense', 'GF_defense', 'GA_defense', 'Tackles_Tkl', 'Tackles_TklW', 'Tackles_Def 3rd', 'Tackles_Mid 3rd', 'Tackles_Att 3rd', 'Challenges_Tkl', 'Challenges_Att', 'Challenges_Tkl%', 'Challenges_Lost', 'Blocks_Blocks', 'Blocks_Sh', 'Blocks_Pass', 'Int', 'Tkl+Int', 'Clr', 'Err', 'time_defense', 'match_report_defense', 'round_keeper', 'day_keeper', 'result_keeper', 'GF_keeper', 'GA_keeper', 'Performance_SoTA', 'Performance_GA', 'Performance_Saves', 'Performance_Save%', 'Performance_CS', 'Performance_PSxG', 'Performance_PSxG+/-', 'Penalty Kicks_PKatt', 'Penalty Kicks_PKA', 'Penalty Kicks_PKsv', 'Penalty Kicks_PKm', 'Launched_Cmp', 'Launched_Att', 'Launched_Cmp%', 'Passes_Att (GK)', 'Passes_Thr', 'Passes_Launch%', 'Passes_AvgLen', 'Goal Kicks_Att', 'Goal Kicks_Launch%', 'Goal Kicks_AvgLen', 'Crosses_Opp', 'Crosses_Stp', 'Crosses_Stp%', 'Sweeper_#OPA', 'Sweeper_AvgDist', 'time_keeper', 'match_report_keeper', 'round_misc', 'day_misc', 'result_misc', 'GF_misc', 'GA_misc', 'Performance_CrdY', 'Performance_CrdR', 'Performance_2CrdY', 'Performance_Fls', 'Performance_Fld', 'Performance_Off', 'Performance_Crs', 'Performance_Int', 'Performance_TklW', 'Performance_PKwon', 'Performance_PKcon', 'Performance_OG', 'Performance_Recov', 'Aerial Duels_Won', 'Aerial Duels_Lost', 'Aerial Duels_Won%', 'time_misc', 'match_report_misc']
+2024-12-14 18:39:34 INFO [main]: Data scraped successfully and saved to ../modsData/lfc_data_2022.csv
+2024-12-14 18:39:34 INFO [main]: Summary of scraped data:
+Total matches: 38
+Date range: 2022-08-06 00:00:00 to 2023-05-28 00:00:00
+Columns retrieved: Date, Venue, Opponent, Goals For, Goals Against, Expected Goals (xG), Expected Goals Against (xGA), Possession, Key Passes, Passes into Penalty Area, Crosses into Penalty Area, Interceptions, Clearances, Errors, Home Venue, Clean Sheets
+2024-12-14 18:39:34 INFO [main]: Loading data from ../modsData/lfc_data_2022.csv
+2024-12-14 18:39:34 INFO [main]: Processed data saved to ../modsData/lfc_data_2022_processed.csv
+2024-12-14 18:39:34 INFO [main]: Processed Data Summary:
+Total matches: 38
+Date range: 2022-08-06 00:00:00 to 2023-05-28 00:00:00
+Columns: Date, Venue, Opponent, Goals For, Goals Against, Expected Goals (xG), Expected Goals Against (xGA), Possession, Key Passes, Passes into Penalty Area, Crosses into Penalty Area, Interceptions, Clearances, Errors, Home Venue, Clean Sheets, Goal Difference, Result, Result_Code, Opponent_Code, Goals For_Rolling_5, Goals Against_Rolling_5, Goal Difference_Rolling_5, Possession_Rolling_5, Expected Goals (xG)_Rolling_5, Expected Goals Against (xGA)_Rolling_5, Interceptions_Rolling_5, Clearances_Rolling_5, Errors_Rolling_5, Days Since Last Match
+2024-12-14 18:39:34 INFO [main]: Loading processed data from ../modsData/lfc_data_2022_processed.csv
+2024-12-14 18:39:34 INFO [main]: Logistic Regression Model Accuracy after balancing: 0.40
+2024-12-14 18:39:34 INFO [main]: Logistic Regression Classification Report after balancing:
+              precision    recall  f1-score   support
+
+        Loss       0.00      0.00      0.00         0
+        Draw       0.00      0.00      0.00         2
+         Win       0.67      0.67      0.67         3
+
+    accuracy                           0.40         5
+   macro avg       0.22      0.22      0.22         5
+weighted avg       0.40      0.40      0.40         5
+
+2024-12-14 18:39:34 INFO [main]: Random Forest Model Accuracy after balancing: 0.20
+2024-12-14 18:39:34 INFO [main]: Random Forest Classification Report after balancing:
+              precision    recall  f1-score   support
+
+        Loss       0.00      0.00      0.00         0
+        Draw       0.00      0.00      0.00         2
+         Win       0.50      0.33      0.40         3
+
+    accuracy                           0.20         5
+   macro avg       0.17      0.11      0.13         5
+weighted avg       0.30      0.20      0.24         5
+
+2024-12-14 18:39:35 INFO [main]: Predictions vs Actual Results:
+      Date       Opponent Actual Result LogReg Prediction RandomForest Prediction
+2023-05-03         Fulham           Win               Win                    Loss
+2023-05-06      Brentford           Win              Loss                    Loss
+2023-05-15 Leicester City           Win               Win                     Win
+2023-05-20    Aston Villa          Draw              Loss                    Loss
+2023-05-28    Southampton          Draw               Win                     Win
+2024-12-14 18:39:35 INFO [main]: 
+Processing season: 2023-2024
+2024-12-14 18:39:35 INFO [main]: Saving cached data to /Users/abdulaalkhafaji/soccerdata/data/FBref
+2024-12-14 18:39:35 INFO [main]: Fetching schedule data...
+2024-12-14 18:39:35 INFO [main]: Columns in schedule: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes']
+2024-12-14 18:39:35 INFO [main]: Fetching shooting data...
+2024-12-14 18:39:35 INFO [main]: Columns in shooting: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Standard_Gls', 'Standard_Sh', 'Standard_SoT', 'Standard_SoT%', 'Standard_G/Sh', 'Standard_G/SoT', 'Standard_Dist', 'Standard_FK', 'Standard_PK', 'Standard_PKatt', 'Expected_xG', 'Expected_npxG', 'Expected_npxG/Sh', 'Expected_G-xG', 'Expected_np:G-xG', 'time', 'match_report']
+2024-12-14 18:39:35 INFO [main]: Fetching passing data...
+2024-12-14 18:39:35 INFO [main]: Columns in passing: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Total_Cmp', 'Total_Att', 'Total_Cmp%', 'Total_TotDist', 'Total_PrgDist', 'Short_Cmp', 'Short_Att', 'Short_Cmp%', 'Medium_Cmp', 'Medium_Att', 'Medium_Cmp%', 'Long_Cmp', 'Long_Att', 'Long_Cmp%', 'Ast', 'xAG', 'xA', 'KP', '1/3', 'PPA', 'CrsPA', 'PrgP', 'time', 'match_report']
+2024-12-14 18:39:35 INFO [main]: Fetching defense data...
+2024-12-14 18:39:35 INFO [main]: Columns in defense: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Tackles_Tkl', 'Tackles_TklW', 'Tackles_Def 3rd', 'Tackles_Mid 3rd', 'Tackles_Att 3rd', 'Challenges_Tkl', 'Challenges_Att', 'Challenges_Tkl%', 'Challenges_Lost', 'Blocks_Blocks', 'Blocks_Sh', 'Blocks_Pass', 'Int', 'Tkl+Int', 'Clr', 'Err', 'time', 'match_report']
+2024-12-14 18:39:35 INFO [main]: Fetching keeper data...
+2024-12-14 18:39:35 INFO [main]: Columns in keeper: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Performance_SoTA', 'Performance_GA', 'Performance_Saves', 'Performance_Save%', 'Performance_CS', 'Performance_PSxG', 'Performance_PSxG+/-', 'Penalty Kicks_PKatt', 'Penalty Kicks_PKA', 'Penalty Kicks_PKsv', 'Penalty Kicks_PKm', 'Launched_Cmp', 'Launched_Att', 'Launched_Cmp%', 'Passes_Att (GK)', 'Passes_Thr', 'Passes_Launch%', 'Passes_AvgLen', 'Goal Kicks_Att', 'Goal Kicks_Launch%', 'Goal Kicks_AvgLen', 'Crosses_Opp', 'Crosses_Stp', 'Crosses_Stp%', 'Sweeper_#OPA', 'Sweeper_AvgDist', 'time', 'match_report']
+2024-12-14 18:39:35 INFO [main]: Fetching misc data...
+2024-12-14 18:39:35 INFO [main]: Columns in misc: ['date', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'Performance_CrdY', 'Performance_CrdR', 'Performance_2CrdY', 'Performance_Fls', 'Performance_Fld', 'Performance_Off', 'Performance_Crs', 'Performance_Int', 'Performance_TklW', 'Performance_PKwon', 'Performance_PKcon', 'Performance_OG', 'Performance_Recov', 'Aerial Duels_Won', 'Aerial Duels_Lost', 'Aerial Duels_Won%', 'time', 'match_report']
+2024-12-14 18:39:35 INFO [main]: Schedule columns: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes']
+2024-12-14 18:39:35 INFO [main]: Final columns after merging: ['date', 'time', 'round', 'day', 'venue', 'result', 'GF', 'GA', 'opponent', 'xG', 'xGA', 'Poss', 'Attendance', 'Captain', 'Formation', 'Opp Formation', 'Referee', 'match_report', 'Notes', 'round_shooting', 'day_shooting', 'result_shooting', 'GF_shooting', 'GA_shooting', 'Standard_Gls', 'Standard_Sh', 'Standard_SoT', 'Standard_SoT%', 'Standard_G/Sh', 'Standard_G/SoT', 'Standard_Dist', 'Standard_FK', 'Standard_PK', 'Standard_PKatt', 'Expected_xG', 'Expected_npxG', 'Expected_npxG/Sh', 'Expected_G-xG', 'Expected_np:G-xG', 'time_shooting', 'match_report_shooting', 'round_passing', 'day_passing', 'result_passing', 'GF_passing', 'GA_passing', 'Total_Cmp', 'Total_Att', 'Total_Cmp%', 'Total_TotDist', 'Total_PrgDist', 'Short_Cmp', 'Short_Att', 'Short_Cmp%', 'Medium_Cmp', 'Medium_Att', 'Medium_Cmp%', 'Long_Cmp', 'Long_Att', 'Long_Cmp%', 'Ast', 'xAG', 'xA', 'KP', '1/3', 'PPA', 'CrsPA', 'PrgP', 'time_passing', 'match_report_passing', 'round_defense', 'day_defense', 'result_defense', 'GF_defense', 'GA_defense', 'Tackles_Tkl', 'Tackles_TklW', 'Tackles_Def 3rd', 'Tackles_Mid 3rd', 'Tackles_Att 3rd', 'Challenges_Tkl', 'Challenges_Att', 'Challenges_Tkl%', 'Challenges_Lost', 'Blocks_Blocks', 'Blocks_Sh', 'Blocks_Pass', 'Int', 'Tkl+Int', 'Clr', 'Err', 'time_defense', 'match_report_defense', 'round_keeper', 'day_keeper', 'result_keeper', 'GF_keeper', 'GA_keeper', 'Performance_SoTA', 'Performance_GA', 'Performance_Saves', 'Performance_Save%', 'Performance_CS', 'Performance_PSxG', 'Performance_PSxG+/-', 'Penalty Kicks_PKatt', 'Penalty Kicks_PKA', 'Penalty Kicks_PKsv', 'Penalty Kicks_PKm', 'Launched_Cmp', 'Launched_Att', 'Launched_Cmp%', 'Passes_Att (GK)', 'Passes_Thr', 'Passes_Launch%', 'Passes_AvgLen', 'Goal Kicks_Att', 'Goal Kicks_Launch%', 'Goal Kicks_AvgLen', 'Crosses_Opp', 'Crosses_Stp', 'Crosses_Stp%', 'Sweeper_#OPA', 'Sweeper_AvgDist', 'time_keeper', 'match_report_keeper', 'round_misc', 'day_misc', 'result_misc', 'GF_misc', 'GA_misc', 'Performance_CrdY', 'Performance_CrdR', 'Performance_2CrdY', 'Performance_Fls', 'Performance_Fld', 'Performance_Off', 'Performance_Crs', 'Performance_Int', 'Performance_TklW', 'Performance_PKwon', 'Performance_PKcon', 'Performance_OG', 'Performance_Recov', 'Aerial Duels_Won', 'Aerial Duels_Lost', 'Aerial Duels_Won%', 'time_misc', 'match_report_misc']
+2024-12-14 18:39:35 INFO [main]: Data scraped successfully and saved to ../modsData/lfc_data_2023.csv
+2024-12-14 18:39:35 INFO [main]: Summary of scraped data:
+Total matches: 38
+Date range: 2023-08-13 00:00:00 to 2024-05-19 00:00:00
+Columns retrieved: Date, Venue, Opponent, Goals For, Goals Against, Expected Goals (xG), Expected Goals Against (xGA), Possession, Key Passes, Passes into Penalty Area, Crosses into Penalty Area, Interceptions, Clearances, Errors, Home Venue, Clean Sheets
+2024-12-14 18:39:35 INFO [main]: Loading data from ../modsData/lfc_data_2023.csv
+2024-12-14 18:39:35 INFO [main]: Processed data saved to ../modsData/lfc_data_2023_processed.csv
+2024-12-14 18:39:35 INFO [main]: Processed Data Summary:
+Total matches: 38
+Date range: 2023-08-13 00:00:00 to 2024-05-19 00:00:00
+Columns: Date, Venue, Opponent, Goals For, Goals Against, Expected Goals (xG), Expected Goals Against (xGA), Possession, Key Passes, Passes into Penalty Area, Crosses into Penalty Area, Interceptions, Clearances, Errors, Home Venue, Clean Sheets, Goal Difference, Result, Result_Code, Opponent_Code, Goals For_Rolling_5, Goals Against_Rolling_5, Goal Difference_Rolling_5, Possession_Rolling_5, Expected Goals (xG)_Rolling_5, Expected Goals Against (xGA)_Rolling_5, Interceptions_Rolling_5, Clearances_Rolling_5, Errors_Rolling_5, Days Since Last Match
+2024-12-14 18:39:35 INFO [main]: Loading processed data from ../modsData/lfc_data_2023_processed.csv
+2024-12-14 18:39:35 INFO [main]: Logistic Regression Model Accuracy after balancing: 0.20
+2024-12-14 18:39:35 INFO [main]: Logistic Regression Classification Report after balancing:
+              precision    recall  f1-score   support
+
+        Loss       0.20      1.00      0.33         1
+        Draw       0.00      0.00      0.00         2
+         Win       0.00      0.00      0.00         2
+
+    accuracy                           0.20         5
+   macro avg       0.07      0.33      0.11         5
+weighted avg       0.04      0.20      0.07         5
+
+2024-12-14 18:39:35 INFO [main]: Random Forest Model Accuracy after balancing: 0.20
+2024-12-14 18:39:35 INFO [main]: Random Forest Classification Report after balancing:
+              precision    recall  f1-score   support
+
+        Loss       0.33      1.00      0.50         1
+        Draw       0.00      0.00      0.00         2
+         Win       0.00      0.00      0.00         2
+
+    accuracy                           0.20         5
+   macro avg       0.11      0.33      0.17         5
+weighted avg       0.07      0.20      0.10         5
+
+2024-12-14 18:39:35 INFO [main]: Predictions vs Actual Results:
+      Date    Opponent Actual Result LogReg Prediction RandomForest Prediction
+2024-04-24     Everton          Loss              Loss                    Loss
+2024-04-27    West Ham          Draw              Loss                    Loss
+2024-05-05   Tottenham           Win              Loss                    Draw
+2024-05-13 Aston Villa          Draw              Loss                     Win
+2024-05-19      Wolves           Win              Loss                    Loss
+2024-12-14 18:39:35 INFO [main]: All seasons processed. Summary saved to ../modsData/season_results_summary.csv
+2024-12-14 18:39:35 INFO [main]: Pipeline complete.

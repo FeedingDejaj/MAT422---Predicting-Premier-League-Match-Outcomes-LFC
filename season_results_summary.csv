@@ -1,0 +1,4 @@
+Season,LogisticRegressionAccuracy,RandomForestAccuracy
+2019-2020,0.6,0.6
+2022-2023,0.4,0.2
+2023-2024,0.2,0.2
